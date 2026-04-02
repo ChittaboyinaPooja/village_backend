@@ -1,5 +1,7 @@
 package com.village.village_backend;
 
+import org.springframework.web.bind.annotation.GetMapping;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -61,4 +63,8 @@ public class Person {
     public void setSurname(String surname) {
         this.surname = surname;
     }
+    @GetMapping("/test")
+public String test() {
+    return "Backend is working";
+}
 }
