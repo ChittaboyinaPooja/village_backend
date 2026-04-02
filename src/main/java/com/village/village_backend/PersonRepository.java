@@ -7,4 +7,6 @@ public interface PersonRepository extends JpaRepository<Person, Long> {
 
     // ⭐ find persons with null surname
     List<Person> findBySurnameIsNull();
+
+    List<Person> findBySurname(String surname);
 }
